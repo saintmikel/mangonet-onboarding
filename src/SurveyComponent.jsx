@@ -67,7 +67,7 @@ const SurveyComponent = () => {
       "https://mangonet.com.ng/wp-content/uploads/2019/11/mangonet-logo-e1573208220118.png",
     logoFit: "contain",
     logoHeight: 116,
-    logoWidth: 180,
+    logoWidth: 120,
     width: "180px",
     textUpdateMode: "onTyping",
     completedHtml:
@@ -156,7 +156,7 @@ const SurveyComponent = () => {
           {
             type: "panel",
             colCount: 2,
-            visibleIf: "{type_of_registration} = false",
+            visibleIf: "{mode} = false",
             elements: [
               {
                 type: "panel",
@@ -184,7 +184,7 @@ const SurveyComponent = () => {
           {
             type: "panel",
             colCount: 2,
-            visibleIf: "{type_of_registration} = true",
+            visibleIf: "{mode} = true",
             elements: [
               {
                 type: "panel",
@@ -345,7 +345,7 @@ const SurveyComponent = () => {
                     isRequired: true,
                     name: "billingCompany",
                     title: "Company",
-                    visibleIf: "{type_of_registration} = true"
+                    visibleIf: "{mode} = true"
                   },
                   {
                     type: "text",
@@ -419,7 +419,7 @@ const SurveyComponent = () => {
                 storeDataAsText: false,
                 isRequired: true,
                 showPreview: true,
-                visibleIf: "{type_of_registration} = true",
+                visibleIf: "{mode} = true",
                 imageWidth: 150,
                 maxSize: 1024000 * 4
               },
@@ -430,7 +430,7 @@ const SurveyComponent = () => {
                   "This letter should introduce you as the contact for your company",
                 name: "letter",
                 storeDataAsText: false,
-                visibleIf: "{type_of_registration} = true",
+                visibleIf: "{mode} = true",
                 isRequired: true,
                 showPreview: true,
                 imageWidth: 150,
