@@ -66,8 +66,8 @@ const SurveyComponent = () => {
     logo:
       "https://mangonet.com.ng/wp-content/uploads/2019/11/mangonet-logo-e1573208220118.png",
     logoFit: "contain",
-    logoHeight: 116,
-    logoWidth: 120,
+    logoHeight: 86,
+    logoWidth: 180,
     width: "180px",
     textUpdateMode: "onTyping",
     completedHtml:
