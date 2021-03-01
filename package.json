@@ -1,0 +1,11 @@
+{
+  "devDependencies": {
+    "react-scripts": "latest"
+  },
+  "dependencies": {
+    "axios": "0.21.1",
+    "react": "latest",
+    "react-dom": "latest",
+    "survey-react": "latest"
+  }
+}
