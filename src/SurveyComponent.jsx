@@ -140,7 +140,6 @@ const SurveyComponent = () => {
     pages: [
       {
         name: "page1",
-        navigationTitle: "Plan",
         navigationDescription: "Choose your plan",
         elements: [
           {
@@ -155,57 +154,35 @@ const SurveyComponent = () => {
           },
           {
             type: "panel",
-            colCount: 2,
-            visibleIf: "{mode} = false",
+            title: "Choose a plan",
             elements: [
               {
-                type: "panel",
-                title: "Choose a plan",
-                elements: [
-                  {
-                    type: "radiogroup",
-                    hideNumber: true,
-                    isRequired: true,
-                    name: "plan",
-                    startWithNewLine: false,
-                    title: "Residential Plans",
-                    choices: [...residentialPlans, ...residentialPlusPlans].map(
-                      ({ title, price, burstable }) => ({
-                        value: title,
-                        text: `${title} ${price} ${burstable}Mbps`
-                      })
-                    ),
-                    colCount: 2
-                  }
-                ]
-              }
-            ]
-          },
-          {
-            type: "panel",
-            colCount: 2,
-            visibleIf: "{mode} = true",
-            elements: [
+                type: "radiogroup",
+                hideNumber: true,
+                isRequired: true,
+                name: "plan1",
+                visibleIf: "{mode} = false",
+                title: "Residential Plans",
+                choices: [...residentialPlans, ...residentialPlusPlans].map(
+                  ({ title, price, burstable }) => ({
+                    value: title,
+                    text: `${title} ${price} ${burstable}Mbps`
+                  })
+                ),
+                colCount: 2
+              },
               {
-                type: "panel",
-                title: "Choose a plan",
-                elements: [
-                  {
-                    type: "radiogroup",
-                    hideNumber: true,
-                    isRequired: true,
-                    name: "plan",
-                    startWithNewLine: false,
-                    title: "Corporate Plans",
-                    choices: corporatePlans.map(
-                      ({ title, price, burstable }) => ({
-                        value: title,
-                        text: `${title} ${price} ${burstable}Mbps`
-                      })
-                    ),
-                    colCount: 2
-                  }
-                ]
+                type: "radiogroup",
+                hideNumber: true,
+                isRequired: true,
+                visibleIf: "{mode} = true",
+                name: "plan2",
+                title: "Corporate Plans",
+                choices: corporatePlans.map(({ title, price, burstable }) => ({
+                  value: title,
+                  text: `${title} ${price} ${burstable}Mbps`
+                })),
+                colCount: 2
               }
             ]
           },
@@ -487,8 +464,9 @@ const SurveyComponent = () => {
     const answers = {};
     Object.keys(result.data).forEach((name) => {
       const answer = result.data[name];
-      // const question = result.getQuestionByName(name)
-      if (["inspectionDay", "dob"].includes(name)) {
+      if (["plan1", "plan2"].includes(name)) {
+        answers["plan"] = answer;
+      } else if (["inspectionDay", "dob"].includes(name)) {
         const unsplit = answer.split("-");
         answers[name + "Full"] = answer;
         answers[name] = {
