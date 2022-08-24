@@ -14,25 +14,22 @@ const SurveyComponent = () => {
   const form = useRemoteForm(api);
   const residentialPlusPlans = [
     {
-      title: "Mango Duo-Play with 25GB CCTV Storage",
+      title: "Mango Duo-Play",
       price: "₦15,357",
       burstable: 10,
-      "Storge Space": "25GB",
-      "CCTV Camera": ""
+      "Storge Space": "25GB"
     },
     {
-      title: "Mango Tri-Play with 50GB CCTV Storage",
+      title: "Mango Tri-Play",
       price: "₦25,595",
       burstable: 15,
-      "Storge Space": "50GB",
-      "CCTV Camera": ""
+      "Storge Space": "50GB"
     },
     {
-      title: "Mango U-Play with 75GB CCTV Storage",
+      title: "Mango U-Play",
       price: "₦35,833",
       burstable: 20,
-      "Storge Space": "75GB",
-      "CCTV Camera": "CCTV"
+      "Storge Space": "75GB"
     }
   ];
   const residentialPlans = [
