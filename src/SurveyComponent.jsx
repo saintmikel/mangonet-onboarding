@@ -65,7 +65,6 @@ const SurveyComponent = () => {
     logoFit: "contain",
     logoHeight: 86,
     logoWidth: 180,
-    width: "180px",
     textUpdateMode: "onTyping",
     completedHtml:
       "<p>Your registration has been received. We will contact you shortly.</p>",
