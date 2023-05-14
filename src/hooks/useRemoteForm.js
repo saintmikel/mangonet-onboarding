@@ -28,5 +28,5 @@ export default function useRemoteForm() {
     getForm();
   }, [loading, form, setForm, setExistingForm, existingForm, setLoading, api]);
 
-  return form;
+  return [form, setForm];
 }
