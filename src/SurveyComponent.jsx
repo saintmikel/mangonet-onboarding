@@ -11,7 +11,7 @@ import { Upload } from "./services/upload";
 Survey.StylesManager.applyTheme("modern");
 
 const SurveyComponent = () => {
-  const form = useRemoteForm(api);
+  const form = useRemoteForm();
   const residentialPlusPlans = [
     {
       title: "Mango Duo-Play",
@@ -366,7 +366,7 @@ const SurveyComponent = () => {
               },
               {
                 type: "file",
-                title: "Please upload your Governnment Identificationn",
+                title: "Please upload your government identification",
                 name: "identification",
                 storeDataAsText: false,
                 isRequired: true,
@@ -387,7 +387,7 @@ const SurveyComponent = () => {
               {
                 type: "file",
                 title:
-                  "Please upload your company's Certificate of Incorporation",
+                  "Please upload your company's certificate of incorporation",
                 name: "incorporation",
                 storeDataAsText: false,
                 isRequired: true,
