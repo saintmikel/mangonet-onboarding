@@ -16,44 +16,44 @@ const SurveyComponent = () => {
     {
       title: "Mango Duo-Play",
       price: "₦15,357",
-      burstable: 10,
+      burstable: 18,
       "Storge Space": "25GB",
     },
     {
       title: "Mango Tri-Play",
       price: "₦25,595",
-      burstable: 15,
+      burstable: 30,
       "Storge Space": "50GB",
     },
     {
       title: "Mango U-Play",
       price: "₦35,833",
-      burstable: 20,
+      burstable: 40,
       "Storge Space": "75GB",
     },
   ];
   const residentialPlans = [
-    { title: "Mango Basic", price: "₦12,286", burstable: 10 },
-    { title: "Mango Plus", price: "₦17,405", burstable: 15 },
-    { title: "Mango Premium", price: "₦22,524", burstable: 20 },
-    { title: "Mango Premium +", price: "₦30,718", burstable: 30 },
+    { title: "Mango Basic", price: "₦12,286", burstable: 18 },
+    { title: "Mango Plus", price: "₦17,405", burstable: 30 },
+    { title: "Mango Premium", price: "₦22,524", burstable: 40 },
+    { title: "Mango Premium +", price: "₦30,718", burstable: 60 },
   ];
   const corporatePlans = [
-    { title: "Mango SME", price: "₦ 25,595", burstable: 25 },
+    { title: "Mango SME", price: "₦ 25,595", burstable: 50 },
     {
       title: "Mango Corporate Basic",
       price: "₦ 40,952",
-      burstable: 35,
+      burstable: 70,
     },
     {
       title: "Mango Corporate Plus",
       price: "₦ 46,071",
-      burstable: 40,
+      burstable: 80,
     },
     {
       title: "Mango Corporate Premium",
       price: "₦ 51,190",
-      burstable: 45,
+      burstable: 100,
     },
   ];
   const json = {
