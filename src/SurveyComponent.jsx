@@ -37,6 +37,9 @@ const SurveyComponent = () => {
     { title: "Mango Plus", price: "₦17,405", burstable: 30 },
     { title: "Mango Premium", price: "₦22,524", burstable: 40 },
     { title: "Mango Premium +", price: "₦30,718", burstable: 60 },
+    { title: "Mango Gold", price: "₦35,326", burstable: 90 },
+    { title: "Mango Diamond", price: "₦42,391", burstable: 120 },
+    { title: "Mango Platinum", price: "₦50,870", burstable: 150 },
   ];
   const corporatePlans = [
     { title: "Mango SME", price: "₦ 25,595", burstable: 50 },
@@ -54,6 +57,21 @@ const SurveyComponent = () => {
       title: "Mango Corporate Premium",
       price: "₦ 51,190",
       burstable: 100,
+    },
+    {
+      title: "Mango Preferred",
+      price: "₦ 58,869",
+      burstable: 165,
+    },
+    {
+      title: "Mango Advantage",
+      price: "₦ 78,296",
+      burstable: 210,
+    },
+    {
+      title: "Mango Ultimate",
+      price: "₦ 93,955",
+      burstable: 300,
     },
   ];
   const json = {
