@@ -78,7 +78,7 @@ const SurveyComponent = () => {
     title: "Customer Onboarding",
     description:
       "Please provide the following information to setup your account",
-    logo: "https://mangonet.com.ng/wp-content/uploads/2019/11/mangonet-logo-e1573208220118.png",
+    logo: "https://mangonet.com.ng/wp-content/uploads/2023/06/logo-1.png",
     logoFit: "contain",
     logoHeight: 86,
     logoWidth: 180,
