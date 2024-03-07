@@ -274,6 +274,20 @@ const SurveyComponent = () => {
                 title: "Address",
               },
               {
+                type: "text",
+                isRequired: true,
+                name: "wifiname",
+                startWithNewLine: false,
+                title: "Wifi Name",
+              },
+              {
+                type: "text",
+                isRequired: true,
+                name: "password",
+                startWithNewLine: false,
+                title: "Password",
+              },
+              {
                 type: "panel",
                 elements: [
                   {
